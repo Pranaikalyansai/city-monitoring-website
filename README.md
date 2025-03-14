@@ -1,12 +1,67 @@
-# React + Vite
+# Traffic Monitoring Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based frontend application that visualizes traffic and pollution data using Recharts. The dashboard displays real-time-like dummy data of traffic congestion, pollution levels, and vehicle count.
 
-Currently, two official plugins are available:
+## Features
+- **Traffic & Pollution Monitoring:** Line chart visualization of traffic congestion and pollution levels over time.
+- **Vehicle Count Display:** A list showing the number of vehicles at different times of the day.
+- **Responsive Design:** Works on both desktop and mobile screens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+### Prerequisites
+Ensure you have **Node.js** and **npm/yarn** installed on your system.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/traffic-monitoring-dashboard.git
+   cd traffic-monitoring-dashboard
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn install
+   ```
+
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+   or
+   ```sh
+   yarn start
+   ```
+
+4. Open your browser and visit `http://localhost:3000`.
+
+## Dependencies
+- **React**: Frontend framework
+- **Recharts**: For chart visualization (`npm install recharts`)
+- **Tailwind CSS** (Optional): For styling
+
+## File Structure
+```
+/src
+  ├── components
+  │   ├── ui
+  │   │   ├── card.jsx
+  ├── App.jsx
+  ├── index.js
+  ├── styles.css
+```
+
+## Troubleshooting
+- If you get module resolution errors, ensure all dependencies are installed by running:
+  ```sh
+  npm install
+  ```
+- If `@/components/ui/card` import fails, replace it with a relative path: `./components/ui/card`.
+
+## License
+This project is open-source and free to use. Modify and expand as needed!
+
